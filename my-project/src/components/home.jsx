@@ -35,7 +35,7 @@ const Home = () => {
               id: post.id,
               title: post.title,
               description: post.content,
-              image: post.images.length > 0 ? `http://localhost:8000${post.images[0].image}` : null
+              image: post.images.length > 0 ? `${baseurl}${post.images[0].image}` : null
           }));
           console.log(transformedPosts)
           setCards(transformedPosts);
